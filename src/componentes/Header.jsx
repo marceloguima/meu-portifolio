@@ -1,15 +1,13 @@
 import "./Header.css";
+import MenuUl from "./MenuUl";
+
 
 function Header() {
     return (
         <header>
-            <a href="/">Marcelo Guimarães</a>
+            <a className="logo" href="/">Marcelo G.</a>
             <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#tecnologias">Tecnologias</a></li>
-                </ul>
+               <MenuUl/>
             </nav>
         </header>
     );

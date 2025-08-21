@@ -1,18 +1,29 @@
 header{
     width: 100%;
     height: 50px;
-    background-color: #e8eaeb;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    padding: 20px;
 }
 
 nav{
-    width: 80%;
+    width: 60px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
-ul{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+.logo{
+    width: 350px;
+    font-size: 2rem;
+}
+
+
+
+@media (min-width: 700px) {
+   nav{
+    width: 65%;
+   }
 }

@@ -8,7 +8,8 @@
 }
 
 :root {
-    --sombra: 1px 4px 10px #d4d4d4;
+    --luz: 1px 4px 10px #d4d4d4;
+    --sombra: 1px 4px 10px #242424;
     --borda-redonda: 10px;
     --cor-principal: #f0f0f0;
     --cor-texto-principal: #2e2e2e;

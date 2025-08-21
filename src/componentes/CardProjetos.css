@@ -1,11 +1,17 @@
 .card{
     width: 320px;
     border: solid 1px var(--cinza-claro);
+    box-shadow: var(--sombra);
+}
+
+.card:hover{
+    transform: scale(1.02);
 }
 
 .card img{
     width: 100%;
 }
+
 
 .infos{
     width: 100%;
@@ -30,4 +36,8 @@
     justify-content: space-around;
     align-items: center;
     gap: 10px;
+}
+
+.codigo{
+    background: var(--azul);
 }

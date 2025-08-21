@@ -15,8 +15,8 @@ const Hero = () => {
                     elegantes e eficientes.
                 </p>
                 <div className="botoes">
-                    <Botao className="cv">Baixar CV</Botao>
-                    <Botao className="ver-projetos">Ver Projetos</Botao>
+                    <Botao className="botao-azul">Baixar CV</Botao>
+                    <Botao className="botao-laranja">Ver Projetos</Botao>
                 </div>
             </div>
         </section>

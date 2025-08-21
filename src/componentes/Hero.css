@@ -19,7 +19,7 @@
     border-radius: 500px;
     background: var(--cor-principal);
     margin-top: 100px;
-    box-shadow: var(--sombra);
+    box-shadow: var(--luz);
 }
 
 .caixa-imagem img {
@@ -50,11 +50,11 @@ p {
 }
 
 
-.cv {
+.botao-azul {
     background: var(--azul);
 }
 
-.ver-projetos {
+.botao-laranja {
     background: var(--laranja);
 }
 

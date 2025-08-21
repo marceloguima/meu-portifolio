@@ -15,6 +15,6 @@ button {
     margin-bottom: 15px;
     color: var(--cor-principal);
     border: none;
-    box-shadow: var(--sombra);
+    box-shadow: var(--luz);
 }
 

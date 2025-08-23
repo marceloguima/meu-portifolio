@@ -37,6 +37,11 @@ li a{
     box-shadow: none;
 }
 
+.botao-laranja{
+    background: var(--laranja);
+    width: 150px;
+}
+
 @media (min-width: 700px) {
 
     .container-menu{

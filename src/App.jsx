@@ -5,11 +5,11 @@ import MeusProjetos from "./componentes/MeusProjetos";
 
 function App() {
     return (
-        <>
+        <div className="container">
             <Header />
             <Hero />
             <MeusProjetos />
-        </>
+        </div>
     );
 }
 

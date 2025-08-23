@@ -1,16 +1,31 @@
+import { useLayoutEffect } from "react";
 import "./Hero.css";
 import minhaImagem from "../assets/foto-portifolio.png";
 import Botao from "./Botao";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Hero = () => {
+    useLayoutEffect(() => {
+
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to(".titulo, .apresentacao_p, .caixa-imagem, .botao-azul, .botao-laranja",  { x: 0, y: 0, opacity: 1
+         });
+
+        // retirar para não perder performance
+        return()=>{
+            gsap.killTweensOf(".titulo, .apresentacao_p, .caixa-imagem, .botao-azul, .botao-laranja")
+        }
+    }, []);
+
     return (
         <section className="hero">
             <div className="caixa-imagem">
-                <img src={minhaImagem} alt="minha imagem" />
+                <img className="minha-imagem" src={minhaImagem} alt="minha imagem" />
             </div>
             <div className="apresentacao">
-                <h1>Olá, eu sou Marcelo Guimarães</h1>
-                <p>
+                <h1 className="titulo">Olá, eu sou Marcelo Guimarães</h1>
+                <p className="apresentacao_p">
                     Desenvolvedor Front-end que transforma ideias em interfaces
                     elegantes e eficientes.
                 </p>

@@ -34,11 +34,15 @@
     opacity: 0;
     transition: ease-in-out 1s;
     text-shadow: 3px 1px 30px #7295d4;
+    font-size: 2rem;
+        text-align: center;
+
 }
 
 .apresentacao_p {
-    margin-top: 40px;
-    font-size: 1.3rem;
+    margin-bottom: 100px;
+    font-size: 1.4rem;
+    text-align: end;
     transform: translatey(100px);
     opacity: 0;
     transition: ease-in-out 0.6s;
@@ -47,8 +51,7 @@
 .apresentacao_p,
 .titulo {
     color: var(--cor-principal);
-    text-align: center;
-    font-size: 2rem;
+    
 }
 
 .botoes {

@@ -33,8 +33,7 @@ const Hero = () => {
             <div className="apresentacao">
                 <h1 className="titulo">Olá, eu sou Marcelo Guimarães</h1>
                 <p className="apresentacao_p">
-                    Desenvolvedor Front-end que transforma ideias em interfaces
-                    elegantes e eficientes.
+                    Desenvolvedor Front-end.
                 </p>
 
                 <div className="botoes">

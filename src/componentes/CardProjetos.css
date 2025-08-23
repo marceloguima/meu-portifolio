@@ -1,9 +1,11 @@
 .card{
-    width: 320px;
+    width: 300px;
+    flex: 0 0 300px;
     border: solid 1px var(--cinza-claro);
     box-shadow: var(--sombra);
     border-radius: var(--borda-redonda);
     background-color: rgba(255, 255, 255, 0.986);
+
 }
 
 .card:hover{

@@ -2,6 +2,8 @@
     width: 320px;
     border: solid 1px var(--cinza-claro);
     box-shadow: var(--sombra);
+    border-radius: var(--borda-redonda);
+    background-color: rgba(255, 255, 255, 0.986);
 }
 
 .card:hover{
@@ -10,6 +12,7 @@
 
 .card img{
     width: 100%;
+    border-radius: 10px 10px 0 0;
 }
 
 
@@ -17,15 +20,19 @@
     width: 100%;
     height: auto;
     padding: 10px;
+
 }
 
 .infos h2 {
     text-align: center;
+        /* color: var(--cor-principal); */
+
 }
 
 .infos p{
     font-size: 1rem;
-    color: var(--cor-texto-principal);
+    /* color: var(--cor-principal); */
+    color: #000;
 }
 
 .botoes-card{

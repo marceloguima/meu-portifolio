@@ -18,8 +18,7 @@ const MeusProjetos = () => {
             />
             <CardProjetos />
             <CardProjetos />
-            <CardProjetos />
-            <CardProjetos />
+          
         </section>
     );
 };

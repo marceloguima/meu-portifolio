@@ -12,6 +12,11 @@
 }
 
 
+.tecs::-webkit-scrollbar{
+    display: none;
+}
+
+
 .circle{
     /* width: 150px; */
       flex: 0 0 150px;

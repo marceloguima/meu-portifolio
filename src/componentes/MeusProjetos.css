@@ -1,5 +1,13 @@
+.container-projects{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
 .projects{
-    width: 95%;
+    width: 100%;
     height: auto;
     padding: 40px;
     margin-top: 10px;
@@ -11,6 +19,35 @@
     margin-bottom: 30px;
 
 }
+
+.projects::-webkit-scrollbar{
+    display: none;
+}
+
+.btn-slider{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #ff564023;
+    color: var(--laranja);
+    border: solid 2px var(--laranja);
+    position: absolute;
+    top: 225px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn-next{
+    right: 160px;
+}
+
+.btn-prev{
+    left: 160px;
+}
+
 
 
 @media (min-width: 1200px){

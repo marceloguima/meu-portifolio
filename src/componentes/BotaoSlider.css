@@ -1,0 +1,19 @@
+
+.botao-slider {
+    width: 100px;
+    height: 30px;
+    color: var(--cor-principal);
+    border: solid 1px var(--cinza-claro);
+    position: absolute;
+    background: transparent;
+    box-shadow: none;
+    z-index: 1;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    
+}
+
+.botao-slider:hover{
+    background: #ffffff18;
+}

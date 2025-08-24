@@ -3,20 +3,16 @@ import { useRef } from "react";
 import CardProjetos from "../componentes/CardProjetos";
 
 import previsao from "../assets/img-projetos-web/previsao.png";
-import finApp from "../assets/img-projetos-web/finapp.png"
-import food from "../assets/img-projetos-web/food.png"
-import listaCompras from "../assets/img-projetos-web/lista.png"
-import meteora from "../assets/img-projetos-web/meteora.png"
-import cadServico from "../assets/img-projetos-web/cad-servico.png"
-import styloShic from "../assets/img-projetos-web/stylo-shic.png"
-// import finApp from "../assets/finapp.png"
-// import finApp from "../assets/finapp.png"
-// import finApp from "../assets/finapp.png"
-
+import finApp from "../assets/img-projetos-web/finapp.png";
+import food from "../assets/img-projetos-web/food.png";
+import listaCompras from "../assets/img-projetos-web/lista.png";
+import meteora from "../assets/img-projetos-web/meteora.png";
+import cadServico from "../assets/img-projetos-web/cad-servico.png";
+import styloShic from "../assets/img-projetos-web/stylo-shic.png";
+import teckpoint from "../assets/img-projetos-web/techpoint.png";
 
 import "./MeusProjetos.css";
-import Subtitulo from "../componentes/Subtitulo"
-
+import Subtitulo from "../componentes/Subtitulo";
 
 // meus icones prev, next
 import { GrNext } from "react-icons/gr";
@@ -39,17 +35,16 @@ const MeusProjetos = () => {
 
     return (
         <section className="container-projects">
-            <Subtitulo nome=" Meus projetos" />
-            <BotaoSlider
-                onClick={clickNext}
-                className="btn-next btn-slider"
-                icone={<GrNext />}
-            ></BotaoSlider>
-            <BotaoSlider
-                onClick={clickPrev}
-                className="btn-prev  btn-slider"
-                icone={<GrPrevious />}
-            ></BotaoSlider>
+            <Subtitulo nome=" Meus Projetos Web" />
+            <BotaoSlider onClick={clickNext} className="btn-next ">
+                <span translate="no">Next</span>
+                <GrNext />
+            </BotaoSlider>
+
+            <BotaoSlider onClick={clickPrev} className="btn-prev ">
+                <GrPrevious />
+                <span translate="no">Prev</span>
+            </BotaoSlider>
 
             <div className="projects" ref={slide}>
                 <CardProjetos
@@ -59,8 +54,8 @@ const MeusProjetos = () => {
                     do tempo. Utiliza uma API pública para fornecer dados
                     atualizados de temperatura, umidade e vento para qualquer
                     cidade do mundo."
-                    linkCodigo=""
                     linkProjeto="prevtempoapp.netlify.app"
+                    linkCodigo=""
                 />
                 <CardProjetos
                     img={finApp}
@@ -69,8 +64,8 @@ const MeusProjetos = () => {
                     do tempo. Utiliza uma API pública para fornecer dados
                     atualizados de temperatura, umidade e vento para qualquer
                     cidade do mundo."
-                    linkCodigo=""
-                    linkProjeto="prevtempoapp.netlify.app"
+                    linkProjeto="finaapp1.netlify.app"
+                    linkCodigo="github.com/marceloguima/controle-financeiro"
                 />
                 <CardProjetos
                     img={food}
@@ -79,8 +74,8 @@ const MeusProjetos = () => {
                     do tempo. Utiliza uma API pública para fornecer dados
                     atualizados de temperatura, umidade e vento para qualquer
                     cidade do mundo."
-                    linkCodigo=""
-                    linkProjeto="prevtempoapp.netlify.app"
+                    linkProjeto="or-food.netlify.app"
+                    linkCodigo="github.com/marceloguima/food"
                 />
                 <CardProjetos
                     img={listaCompras}
@@ -89,8 +84,8 @@ const MeusProjetos = () => {
                     do tempo. Utiliza uma API pública para fornecer dados
                     atualizados de temperatura, umidade e vento para qualquer
                     cidade do mundo."
-                    linkCodigo=""
-                    linkProjeto="prevtempoapp.netlify.app"
+                    linkProjeto="vamoscomprar.netlify.app"
+                    linkCodigo="github.com/marceloguima/Lista-de-compras"
                 />
                 <CardProjetos
                     img={meteora}
@@ -99,8 +94,8 @@ const MeusProjetos = () => {
                     do tempo. Utiliza uma API pública para fornecer dados
                     atualizados de temperatura, umidade e vento para qualquer
                     cidade do mundo."
-                    linkCodigo=""
-                    linkProjeto="prevtempoapp.netlify.app"
+                    linkProjeto="lojmeteora.netlify.app"
+                    linkCodigo="github.com/marceloguima/projeto-meteora"
                 />
 
                 <CardProjetos
@@ -110,8 +105,8 @@ const MeusProjetos = () => {
                     do tempo. Utiliza uma API pública para fornecer dados
                     atualizados de temperatura, umidade e vento para qualquer
                     cidade do mundo."
-                    linkCodigo=""
-                    linkProjeto="prevtempoapp.netlify.app"
+                    linkProjeto="controladodecaixa.netlify.app"
+                    linkCodigo="github.com/marceloguima/controle-de--caixa"
                 />
                 <CardProjetos
                     img={styloShic}
@@ -120,18 +115,18 @@ const MeusProjetos = () => {
                     do tempo. Utiliza uma API pública para fornecer dados
                     atualizados de temperatura, umidade e vento para qualquer
                     cidade do mundo."
-                    linkCodigo=""
-                    linkProjeto="prevtempoapp.netlify.app"
+                    linkProjeto="stylo-top.netlify.app"
+                    linkCodigo="github.com/marceloguima/estilo-chic"
                 />
                 <CardProjetos
-                    img={previsao}
+                    img={teckpoint}
                     titulo="Aplicação web de previsão do tempo"
                     descricao="Um aplicativo simples e intuitivo para consulta de previsão
                     do tempo. Utiliza uma API pública para fornecer dados
                     atualizados de temperatura, umidade e vento para qualquer
                     cidade do mundo."
-                    linkCodigo=""
-                    linkProjeto="prevtempoapp.netlify.app"
+                    linkProjeto="teckpoint.netlify.app"
+                    linkCodigo="github.com/marceloguima/techpoint"
                 />
             </div>
         </section>

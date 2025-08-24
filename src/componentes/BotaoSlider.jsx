@@ -1,9 +1,9 @@
 import "./BotaoSlider.css"
 
-const BotaoSlider = ({className, icone, onClick}) => {
+const BotaoSlider = ({className, children, onClick}) => {
     return (
-        <button onClick={onClick} className={className} >
-          {icone}
+        <button onClick={onClick} className={`botao-slider ${className}`} >
+          {children}
         </button>
         
     );

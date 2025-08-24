@@ -21,6 +21,7 @@
     border-radius: 10px;
     margin-top: 7px;
     box-shadow: var(--sombra);
+    object-fit: contain;
 }
 
 
@@ -43,7 +44,7 @@
     color: #000;
 }
 
-.botoes-card{
+.links-card{
     width: 100%;
     height: 60px;
     margin-top: 20px;
@@ -53,6 +54,22 @@
     gap: 10px;
 }
 
+.links-card a{
+    width: 100px;
+    color: var(--cor-principal);
+    width: 140px;
+    height: 40px;
+    border-radius: var(--borda-redonda);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
 .codigo{
     background: var(--azul);
+}
+
+.projeto{
+    background: var(--laranja);
 }

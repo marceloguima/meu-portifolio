@@ -1,9 +1,10 @@
 .container-projects{
-    width: 100%;
+    width: 95%;
     height: auto;
     display: flex;
     justify-content: center;
     position: relative;
+    /* background-color: aqua; */
 }
 
 .projects{
@@ -12,6 +13,7 @@
     padding: 40px;
     margin-top: 10px;
    display: flex;
+   flex: none;
    gap: 50px;
    overflow-x: auto;
    background: var(--cor-card);
@@ -41,17 +43,16 @@
 }
 
 .btn-next{
-    right: 160px;
+    right: 10%;
 }
 
 .btn-prev{
-    left: 160px;
+    left: 10%;
 }
-
 
 
 @media (min-width: 1200px){
     .projects{
         width: 80%;
     }
-}
+} 

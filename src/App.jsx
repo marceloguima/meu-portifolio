@@ -1,18 +1,20 @@
 import "./App.css";
 import Header from "./componentes/Header";
 import Hero from "./componentes/Hero";
-import Subtitulo from "./componentes/Subtitulo";
+import Subtitulo from "./componentes/Subtitulo"
 
 import MeusProjetos from "./componentes/MeusProjetos";
+import MinhasTec  from "./componentes/MinhasTec";
 
 function App() {
     return (
         <div className="container">
             <Header />
             <Hero />
-            <Subtitulo>Meus projetos</Subtitulo>
+            <Subtitulo nome=" Meus projetos" />
             <MeusProjetos />
-            <Subtitulo>Tecnologias</Subtitulo>
+            <Subtitulo nome="Tecnologias" />
+            <MinhasTec/>
         </div>
     );
 }

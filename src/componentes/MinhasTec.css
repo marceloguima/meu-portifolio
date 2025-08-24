@@ -1,20 +1,32 @@
-.projects{
+.tecs{
     width: 95%;
     height: auto;
     padding: 40px;
     margin-top: 10px;
    display: flex;
-   gap: 50px;
+   gap: 30px;
    overflow-x: auto;
    background: var(--cor-card);
     border-radius: var(--borda-redonda);
     margin-bottom: 30px;
-
 }
 
 
+.circle{
+    /* width: 150px; */
+      flex: 0 0 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e0e0e03f;
+    border-radius: 100px;
+}
+
+
+
 @media (min-width: 1200px){
-    .projects{
+    .tecs{
         width: 80%;
     }
 }

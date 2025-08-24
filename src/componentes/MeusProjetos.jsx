@@ -36,15 +36,17 @@ const MeusProjetos = () => {
     return (
         <section className="container-projects">
             <Subtitulo nome=" Meus Projetos Web" />
-            <BotaoSlider onClick={clickNext} className="btn-next ">
-                <span translate="no">Next</span>
-                <GrNext />
-            </BotaoSlider>
+            <div className="caixa-botoes-slide">
+                <BotaoSlider onClick={clickNext} className="btn-next ">
+                    <span translate="no">Next</span>
+                    <GrNext />
+                </BotaoSlider>
 
-            <BotaoSlider onClick={clickPrev} className="btn-prev ">
-                <GrPrevious />
-                <span translate="no">Prev</span>
-            </BotaoSlider>
+                <BotaoSlider onClick={clickPrev} className="btn-prev ">
+                    <GrPrevious />
+                    <span translate="no">Prev</span>
+                </BotaoSlider>
+            </div>
 
             <div className="projects" ref={slide}>
                 <CardProjetos
@@ -55,7 +57,7 @@ const MeusProjetos = () => {
                     atualizados de temperatura, umidade e vento para qualquer
                     cidade do mundo."
                     linkProjeto="prevtempoapp.netlify.app"
-                    linkCodigo=""
+                    linkCodigo="github.com/marceloguima/previsao-tempo"
                 />
                 <CardProjetos
                     img={finApp}
@@ -77,16 +79,7 @@ const MeusProjetos = () => {
                     linkProjeto="or-food.netlify.app"
                     linkCodigo="github.com/marceloguima/food"
                 />
-                <CardProjetos
-                    img={listaCompras}
-                    titulo="Aplicação web de previsão do tempo"
-                    descricao="Um aplicativo simples e intuitivo para consulta de previsão
-                    do tempo. Utiliza uma API pública para fornecer dados
-                    atualizados de temperatura, umidade e vento para qualquer
-                    cidade do mundo."
-                    linkProjeto="vamoscomprar.netlify.app"
-                    linkCodigo="github.com/marceloguima/Lista-de-compras"
-                />
+              
                 <CardProjetos
                     img={meteora}
                     titulo="Aplicação web de previsão do tempo"
@@ -127,6 +120,17 @@ const MeusProjetos = () => {
                     cidade do mundo."
                     linkProjeto="teckpoint.netlify.app"
                     linkCodigo="github.com/marceloguima/techpoint"
+                />
+
+                  <CardProjetos
+                    img={listaCompras}
+                    titulo="Aplicação web de previsão do tempo"
+                    descricao="Um aplicativo simples e intuitivo para consulta de previsão
+                    do tempo. Utiliza uma API pública para fornecer dados
+                    atualizados de temperatura, umidade e vento para qualquer
+                    cidade do mundo."
+                    linkProjeto="vamoscomprar.netlify.app"
+                    linkCodigo="github.com/marceloguima/Lista-de-compras"
                 />
             </div>
         </section>

@@ -1,10 +1,19 @@
+.container-tecs{
+      width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
 .tecs{
     width: 95%;
     height: auto;
     padding: 40px;
     margin-top: 10px;
    display: flex;
-   gap: 30px;
+   gap: 80px;
    overflow-x: auto;
    background: var(--cor-card);
     border-radius: var(--borda-redonda);

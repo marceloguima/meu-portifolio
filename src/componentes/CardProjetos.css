@@ -1,11 +1,14 @@
 .card{
-    width: 300px;
-    flex: 0 0 300px;
+    /* width: 350px; */
+    flex: 0 0 350px;
     border: solid 1px var(--cinza-claro);
     box-shadow: var(--sombra);
     border-radius: var(--borda-redonda);
     background-color: rgba(255, 255, 255, 0.986);
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 .card:hover{
@@ -13,8 +16,11 @@
 }
 
 .card img{
-    width: 100%;
-    border-radius: 10px 10px 0 0;
+    width: 95%;
+    height: 330px;
+    border-radius: 10px;
+    margin-top: 7px;
+    box-shadow: var(--sombra);
 }
 
 

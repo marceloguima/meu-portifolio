@@ -1,9 +1,22 @@
 import { useRef } from "react";
 
 import CardProjetos from "../componentes/CardProjetos";
-import previsao from "../assets/previsao.png";
+
+import previsao from "../assets/img-projetos-web/previsao.png";
+import finApp from "../assets/img-projetos-web/finapp.png"
+import food from "../assets/img-projetos-web/food.png"
+import listaCompras from "../assets/img-projetos-web/lista.png"
+import meteora from "../assets/img-projetos-web/meteora.png"
+import cadServico from "../assets/img-projetos-web/cad-servico.png"
+import styloShic from "../assets/img-projetos-web/stylo-shic.png"
+// import finApp from "../assets/finapp.png"
+// import finApp from "../assets/finapp.png"
+// import finApp from "../assets/finapp.png"
+
 
 import "./MeusProjetos.css";
+import Subtitulo from "../componentes/Subtitulo"
+
 
 // meus icones prev, next
 import { GrNext } from "react-icons/gr";
@@ -25,7 +38,8 @@ const MeusProjetos = () => {
     };
 
     return (
-        <div className="container-projects">
+        <section className="container-projects">
+            <Subtitulo nome=" Meus projetos" />
             <BotaoSlider
                 onClick={clickNext}
                 className="btn-next btn-slider"
@@ -37,7 +51,7 @@ const MeusProjetos = () => {
                 icone={<GrPrevious />}
             ></BotaoSlider>
 
-            <section className="projects" ref={slide}>
+            <div className="projects" ref={slide}>
                 <CardProjetos
                     img={previsao}
                     titulo="Aplicação web de previsão do tempo"
@@ -49,7 +63,7 @@ const MeusProjetos = () => {
                     linkProjeto="prevtempoapp.netlify.app"
                 />
                 <CardProjetos
-                    img={previsao}
+                    img={finApp}
                     titulo="Aplicação web de previsão do tempo"
                     descricao="Um aplicativo simples e intuitivo para consulta de previsão
                     do tempo. Utiliza uma API pública para fornecer dados
@@ -59,7 +73,7 @@ const MeusProjetos = () => {
                     linkProjeto="prevtempoapp.netlify.app"
                 />
                 <CardProjetos
-                    img={previsao}
+                    img={food}
                     titulo="Aplicação web de previsão do tempo"
                     descricao="Um aplicativo simples e intuitivo para consulta de previsão
                     do tempo. Utiliza uma API pública para fornecer dados
@@ -69,7 +83,7 @@ const MeusProjetos = () => {
                     linkProjeto="prevtempoapp.netlify.app"
                 />
                 <CardProjetos
-                    img={previsao}
+                    img={listaCompras}
                     titulo="Aplicação web de previsão do tempo"
                     descricao="Um aplicativo simples e intuitivo para consulta de previsão
                     do tempo. Utiliza uma API pública para fornecer dados
@@ -79,7 +93,7 @@ const MeusProjetos = () => {
                     linkProjeto="prevtempoapp.netlify.app"
                 />
                 <CardProjetos
-                    img={previsao}
+                    img={meteora}
                     titulo="Aplicação web de previsão do tempo"
                     descricao="Um aplicativo simples e intuitivo para consulta de previsão
                     do tempo. Utiliza uma API pública para fornecer dados
@@ -90,7 +104,17 @@ const MeusProjetos = () => {
                 />
 
                 <CardProjetos
-                    img={previsao}
+                    img={cadServico}
+                    titulo="Aplicação web de previsão do tempo"
+                    descricao="Um aplicativo simples e intuitivo para consulta de previsão
+                    do tempo. Utiliza uma API pública para fornecer dados
+                    atualizados de temperatura, umidade e vento para qualquer
+                    cidade do mundo."
+                    linkCodigo=""
+                    linkProjeto="prevtempoapp.netlify.app"
+                />
+                <CardProjetos
+                    img={styloShic}
                     titulo="Aplicação web de previsão do tempo"
                     descricao="Um aplicativo simples e intuitivo para consulta de previsão
                     do tempo. Utiliza uma API pública para fornecer dados
@@ -109,18 +133,8 @@ const MeusProjetos = () => {
                     linkCodigo=""
                     linkProjeto="prevtempoapp.netlify.app"
                 />
-                <CardProjetos
-                    img={previsao}
-                    titulo="Aplicação web de previsão do tempo"
-                    descricao="Um aplicativo simples e intuitivo para consulta de previsão
-                    do tempo. Utiliza uma API pública para fornecer dados
-                    atualizados de temperatura, umidade e vento para qualquer
-                    cidade do mundo."
-                    linkCodigo=""
-                    linkProjeto="prevtempoapp.netlify.app"
-                />
-            </section>
-        </div>
+            </div>
+        </section>
     );
 };
 

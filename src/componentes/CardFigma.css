@@ -1,0 +1,14 @@
+.card-figma{
+    width: 50%;
+    height: auto;
+    display: flex;
+    background: var(--cor-principal);
+    border: solid 1px var(--cinza-claro);
+    border-radius: var(--borda-redonda);
+    gap: 20px;
+    padding: 10px;
+}
+
+.card-figma img{
+    width: 30%;
+}

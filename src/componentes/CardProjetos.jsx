@@ -9,7 +9,7 @@ const CardProjetos = ({img, titulo, descricao, linkCodigo, linkProjeto}) => {
     return (
         <div className="card">
             
-            <img src={img} alt={`Imagem do projeto ${titulo}`} />
+            <img src={img} alt={`Imagem do projeto ${titulo}`} className="img-projeto" />
             <div className="infos">
                 <h2>{titulo}</h2>
                 <p>{descricao}

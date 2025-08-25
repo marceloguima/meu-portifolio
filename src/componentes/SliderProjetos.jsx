@@ -23,7 +23,7 @@ const SliderProjetos = ({ titulo, children }) => {
 
     return (
         <section className="container-projects">
-            <h3>{titulo}</h3>
+            <h3 className="titulo-secao">{titulo}</h3>
             <div className="caixa-botoes-slide">
                 <BotaoSlider onClick={clickNext} className="btn-next ">
                     <span translate="no">Next</span>

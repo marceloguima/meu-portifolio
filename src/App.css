@@ -1,9 +1,10 @@
-.container{
+.container {
     width: 100%;
     height: 100%;
-   
+
     background: var(--cor-background);
     display: flex;
-   flex-direction: column;
-   align-items: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
 }

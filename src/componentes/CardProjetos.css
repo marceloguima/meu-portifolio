@@ -1,5 +1,5 @@
 .card{
-    /* width: 350px; */
+  
     flex: 0 0 300px;
     height:450px;
     border: solid 1px var(--cinza-claro);

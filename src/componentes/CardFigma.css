@@ -1,7 +1,8 @@
 .card-figma{
-    width: 50%;
+    flex: 0 0 300px;
     height: auto;
     display: flex;
+    justify-content: center;
     background: var(--cor-principal);
     border: solid 1px var(--cinza-claro);
     border-radius: var(--borda-redonda);
